@@ -1,0 +1,45 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="{% static "css/style.css" %}">
+	<title>learnenglish</title>
+</head>
+<body>
+	<div class="header">
+		<img src="{% static "images/logo.svg" %}" alt="logo" class="header__logo" width='250px'>
+		<nav class="header__nav">
+			<ul class="header__list">
+				<li class="header__item"><a href=''>Главная</a></li>
+				<li class="header__item"><a href='{% url 'grammar' %}'>Грамматика</a></li>
+				<li class="header__item"><a href='{% url 'dictionary' %}'>Словарь</a></li>
+				<li class="header__item"><a href='{% url 'practice' %}'>Практика</a></li>
+				<li class="header__item btn"><a href='{% url 'subscriptions' %}'>Подписка</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<div class="hero">
+		<div class="hero__block">
+			<div class="hero__info">
+				<h1>Добро пожаловать в мир английского языка!</h1>
+				<hr>
+				<p>Изучайте английский легко и увлекательно с нашими интерактивными уроками, тестами и упражнениями!</p>
+			</div>
+			<img src="{%static "images/hero.jpg" %}" alt="hero" class="hero__img" width='200px'>
+		</div>
+	</div>
+
+	<div class="transition">
+		<nav class="transition__nav">
+			<ul class='transition__list'>
+				<a class="transition__item" href="{% url 'grammar' %}">Грамматика</a>
+				<a class="transition__item" href="{% url 'dictionary' %}">Словарь</a>
+				<a class="transition__item" href="{% url 'practice' %}">Практика</a>
+			</ul>
+		</nav>
+	</div>
+</body>
+</html>

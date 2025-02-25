@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="{% static 'css/subs.css' %}" />
+		<title>Подписки</title>
+	</head>
+	<body>
+		<h1 style="text-align: center">Выберите подписку</h1>
+		<div class="subscription-container">
+			{% for subscription in subscriptions %}
+			<div class="subscription-card">
+				<h3>Подписка на {{ subscription.get_duration_display }}</h3>
+				<p class="price">{{ subscription.final_price }} руб.</p>
+				{% if subscription.discount > 0 %}
+				<p class="discount">Скидка: {{ subscription.discount }}%</p>
+				{% endif %}
+				<button class="subscribe-button">Оформить</button>
+			</div>
+			{% endfor %}
+		</div>
+		<a href="/" class="home-button">Главная</a>
+	</body>
+</html>

@@ -1,0 +1,83 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="{% static "css/grammar.css" %}">
+	<link rel="stylesheet" href="{% static "css/practice.css" %}">
+	<title>practice</title>
+</head>
+<body>
+	<a id="top"></a>
+	<div class="container">
+	<h1>Словарь</h1>
+	<table>
+		<tr>
+			<th>Русский</th>
+			<th>Английский</th>
+		</tr>
+		<tr><td>яблоко</td><td class="hidden-word">apple</td></tr>
+		<tr><td>собака</td><td class="hidden-word">dog</td></tr>
+		<tr><td>кошка</td><td class="hidden-word">cat</td></tr>
+		<tr><td>дом</td><td class="hidden-word">house</td></tr>
+		<tr><td>книга</td><td class="hidden-word">book</td></tr>
+		<tr><td>стол</td><td class="hidden-word">table</td></tr>
+		<tr><td>стул</td><td class="hidden-word">chair</td></tr>
+		<tr><td>машина</td><td class="hidden-word">car</td></tr>
+		<tr><td>друг</td><td class="hidden-word">friend</td></tr>
+		<tr><td>семья</td><td class="hidden-word">family</td></tr>
+		<tr><td>город</td><td class="hidden-word">city</td></tr>
+		<tr><td>страна</td><td class="hidden-word">country</td></tr>
+		<tr><td>река</td><td class="hidden-word">river</td></tr>
+		<tr><td>гора</td><td class="hidden-word">mountain</td></tr>
+		<tr><td>озеро</td><td class="hidden-word">lake</td></tr>
+		<tr><td>солнце</td><td class="hidden-word">sun</td></tr>
+		<tr><td>луна</td><td class="hidden-word">moon</td></tr>
+		<tr><td>звезда</td><td class="hidden-word">star</td></tr>
+		<tr><td>часы</td><td class="hidden-word">clock</td></tr>
+		<tr><td>время</td><td class="hidden-word">time</td></tr>
+		<tr><td>день</td><td class="hidden-word">day</td></tr>
+		<tr><td>ночь</td><td class="hidden-word">night</td></tr>
+		<tr><td>утро</td><td class="hidden-word">morning</td></tr>
+		<tr><td>вечер</td><td class="hidden-word">evening</td></tr>
+		<tr><td>человек</td><td class="hidden-word">person</td></tr>
+		<tr><td>мальчик</td><td class="hidden-word">boy</td></tr>
+		<tr><td>девочка</td><td class="hidden-word">girl</td></tr>
+		<tr><td>учитель</td><td class="hidden-word">teacher</td></tr>
+		<tr><td>ученик</td><td class="hidden-word">student</td></tr>
+		<tr><td>компьютер</td><td class="hidden-word">computer</td></tr>
+		<tr><td>телефон</td><td class="hidden-word">phone</td></tr>
+		<tr><td>интернет</td><td class="hidden-word">internet</td></tr>
+		<tr><td>телевизор</td><td class="hidden-word">television</td></tr>
+		<tr><td>газета</td><td class="hidden-word">newspaper</td></tr>
+		<tr><td>журнал</td><td class="hidden-word">magazine</td></tr>
+		<tr><td>музыка</td><td class="hidden-word">music</td></tr>
+		<tr><td>фильм</td><td class="hidden-word">movie</td></tr>
+		<tr><td>театр</td><td class="hidden-word">theater</td></tr>
+		<tr><td>школа</td><td class="hidden-word">school</td></tr>
+		<tr><td>университет</td><td class="hidden-word">university</td></tr>
+		<tr><td>работа</td><td class="hidden-word">work</td></tr>
+		<tr><td>деньги</td><td class="hidden-word">money</td></tr>
+		<tr><td>еда</td><td class="hidden-word">food</td></tr>
+		<tr><td>вода</td><td class="hidden-word">water</td></tr>
+		<tr><td>чай</td><td class="hidden-word">tea</td></tr>
+		<tr><td>кофе</td><td class="hidden-word">coffee</td></tr>
+		<tr><td>хлеб</td><td class="hidden-word">bread</td></tr>
+		<tr><td>молоко</td><td class="hidden-word">milk</td></tr>
+		<tr><td>масло</td><td class="hidden-word">butter</td></tr>
+		<tr><td>сахар</td><td class="hidden-word">sugar</td></tr>
+		<tr><td>мясо</td><td class="hidden-word">meat</td></tr>
+		<tr><td>рыба</td><td class="hidden-word">fish</td></tr>
+		<tr><td>овощи</td><td class="hidden-word">vegetables</td></tr>
+	</table>
+</div>
+	<div class="container">
+		<div class="footer">
+			<a href="{% url 'dictionary' %}"><button class="btn">Словарь</button></a>
+			<a href="{% url 'subscriptions' %}"><button class="btn">Подписка</button></a>
+		</div>
+	</div>
+<a href="#" class="scroll-to-top">↑</a>
+</body>
+</html>

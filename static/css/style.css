@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #FDF6E3;
+	font-family: "Poppins", serif;
+	font-weight: 400;
+	font-size: 16px;
+	color: #333333;
+}
+
+a {
+	text-decoration: none;
+	color: #333333;
+}
+
+ul {
+	list-style: none;
+}
+
+.header {
+	padding: 50px 80px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header__item {
+	transition: all .2s ease;
+}
+
+.header__list {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 50px;
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.header__list .btn {
+	padding: 10px 20px;
+	background-color: #90CAF9;
+	border-radius: 8px;
+	transition: all .3s ease;
+}
+
+.header__list .btn:hover {
+	background-color:#cf3939;
+}
+
+.header__item:not(.btn):hover {
+	border-bottom: 5px solid #e08c33;
+	border-radius: 0 0 5px 5px;
+}
+
+.hero {
+	padding: 0 80px;
+}
+
+.hero__block {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.hero__info {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	position: relative;
+}
+
+.hero__info hr {
+	border: none;
+	height: 2px;
+	background: #E57373;
+	width: 95%;
+	border-radius: 5px;
+	position: relative;
+	cursor: pointer;
+}
+
+.hero__info::after {
+	content: "LEARNENGLISH";
+	position: absolute;
+	top: 65%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 18px;
+	color: #cf3939;
+	font-weight: bold;
+	opacity: 0;
+	transition: opacity 0.3s ease-in-out;
+}
+
+.hero__info:hover::after {
+	opacity: 1;
+}
+
+.hero__info h1 {
+	font-size: 60px;
+	width: 100%;
+	line-height: 120%;
+}
+
+.hero__info p {
+	color: #333333b9;
+	font-size: 18px;
+	width: 100%;
+}
+
+.hero__img {
+	width: 50%;
+	height: auto;
+	border-radius: 10px;
+	transition: transform 0.2s;
+}
+
+.transition {
+	padding: 60px 80px;
+}
+
+.transition__list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.transition__item {
+	background: #90CAF9;
+	padding: 40px 100px;
+	border-radius: 20px;
+	transition: all .3s ease;
+	cursor: pointer;
+}
+
+.transition__item:hover {
+	background: #E57373;
+	border-radius: 30px;
+}

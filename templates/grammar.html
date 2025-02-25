@@ -1,0 +1,102 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="{% static "css/grammar.css" %}">
+	<title>grammar</title>
+</head>
+<body>
+	<a id="top"></a>
+	<div class="container">
+		<div class="header">
+			<h1 class="header__title">Грамматика английского языка для начинающих</h1>
+			<p class="header__subtitle">В этом цикле материалов я изложил все правила кратко и простыми словами, чтобы начинающие «с нуля» или те, кто плохо помнит основы английского, смогли самостоятельно разобраться в грамматике, понять ее и применять на практике</p>
+			<img src="{% static "images/grammar_book.png" %}" alt="hero" class="grammar_book">
+		</div>
+		<div class="personal-pronouns">
+			<h3 class="personal-pronouns__title">Личные местоимения в английском языке</h3>
+			<p class="personal-pronouns__subtitle"><strong>Местоимение</strong> — слово, которое заменяет существительное. Местоимение не называет предмет или лицо, а лишь обозначает его. Есть несколько особенностей английских местоимений:</p>
+			<ul class="personal-pronouns__list">
+				<li>I (я) в английском языке всегда пишется с большой буквы.</li>
+				<li>He (он) и she (она) используются для обозначения лиц мужского и женского пола соответственно. Также они используются, когда вы говорите о своих домашних питомцах и вам нужно обозначить их пол.</li>
+				<li>It (оно, это) используется для обозначения неодушевленных предметов, а также животных.</li>
+				<li>We (мы) обозначает говорящего вместе с группой лиц.</li>
+				<li>You (ты, вы, Вы) обозначает обращение «ты», обращение к группе людей «вы» и вежливое обращение к одному человеку «Вы».</li>
+				<li>They (они) употребляется для обозначения одушевленных и неодушевленных предметов во множественном числе.</li>
+			</ul>
+			<p class="personal-pronouns__subtitle">У личных местоимений есть три основные формы:</p>
+			<table>
+				<tr>
+					<th>Именительный падеж (Кто?, Что?)</th>
+					<th>Объектный падеж (Кому?, Кого?, Кем?)</th>
+					<th>Притяжательный падеж (Чей?)</th>
+				</tr>
+				<tr>
+					<td>I — я</td>
+					<td>me — мне, меня</td>
+					<td>my — мой</td>
+				</tr>
+				<tr>
+					<td>he — он</td>
+					<td>him — ему, его</td>
+					<td>his — его</td>
+				</tr>
+				<tr>
+					<td>she — она</td>
+					<td>her — ей, ее</td>
+					<td>her — ее</td>
+				</tr>
+				<tr>
+					<td>it — оно (это)</td>
+					<td>it — ему/ей, его/ее</td>
+					<td>its — его/ее</td>
+				</tr>
+				<tr>
+					<td>we — мы</td>
+					<td>us — нам, нас</td>
+					<td>our — наш</td>
+				</tr>
+				<tr>
+					<td>you — вы, ты</td>
+					<td>you — вам, вас, тебя, тебе</td>
+					<td>your — ваш, твой</td>
+				</tr>
+				<tr>
+					<td>they — они</td>
+					<td>them — им, их</td>
+					<td>their — их</td>
+				</tr>
+		</table>
+		<p class="personal-pronouns__subtitle"><strong>Именительный падеж</strong>: местоимение обозначает предмет или человека, который совершает действие. При этом местоимение выступает в роли подлежащего.</p>
+		<ul class="personal-pronouns__list-purple">
+			<li>I am a manager. — Я менеджер.</li>
+			<li>It (radio) is working. — Оно (радио) работает.</li>
+			<li>They are relatives. — Они родственники.</li>
+			<li>They (shoes) are dirty. — Они (туфли) грязные.</li>
+		</ul>
+		<p class="personal-pronouns__subtitle"><strong>Притяжательный падеж:</strong>местоимение показывает принадлежность предмета и отвечает на вопрос «Чей?».</p>
+		<ul class="personal-pronouns__list-purple">
+			<li>Nick is my friend. — Ник (чей?) мой друг.</li>
+			<li>It’s your cup. — Это (чья?) твоя кружка.</li>
+			<li>They are relatives. — Они родственники.</li>
+			<li>He is washing her dishes now. — Он моет (чью?) ее посуду сейчас.</li>
+		</ul>
+		<p class="personal-pronouns__subtitle"><strong>Объектный падеж:</strong>на местоимение направлено действие. Здесь местоимение выступает в роли дополнения и отвечает на вопросы «Кому?», «Кого?», «Кем?», а для неодушевленных предметов — «Что?».</p>
+		<ul class="personal-pronouns__list-purple">
+			<li>Jim is writing a letter to me. — Джим пишет письмо (кому?) мне.</li>
+			<li>She is cooking for him. — Она готовит для (кого?) него.</li>
+			<li>I am looking at it (picture). — Я смотрю на (что?) это (картину).</li>
+		</ul>
+		</div>
+	</div>
+	<div class="container">
+		<div class="footer">
+			<a href="{% url 'index' %}"><button class="btn">Главная</button></a>
+			<a href="{% url 'dictionary' %}"><button class="btn">Словарь</button></a>
+		</div>
+	</div>
+	<a href="#" class="scroll-to-top">↑</a>
+</body>
+</html>

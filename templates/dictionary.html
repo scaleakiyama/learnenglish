@@ -1,0 +1,83 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/grammar.css' %}">
+    <title>dictionary</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="header__title">Англо-русский словарь</h1>
+            <p class="header__subtitle">100 часто используемых английских слов с переводом</p>
+        </div>
+        <table>
+            <tr>
+                <th>English</th>
+                <th>Русский</th>
+            </tr>
+            <tr><td>Apple</td><td>Яблоко</td></tr>
+            <tr><td>Book</td><td>Книга</td></tr>
+            <tr><td>Car</td><td>Машина</td></tr>
+            <tr><td>Dog</td><td>Собака</td></tr>
+            <tr><td>House</td><td>Дом</td></tr>
+            <tr><td>Sun</td><td>Солнце</td></tr>
+            <tr><td>Moon</td><td>Луна</td></tr>
+            <tr><td>Water</td><td>Вода</td></tr>
+            <tr><td>Fire</td><td>Огонь</td></tr>
+            <tr><td>Earth</td><td>Земля</td></tr>
+            <tr><td>Friend</td><td>Друг</td></tr>
+            <tr><td>Family</td><td>Семья</td></tr>
+            <tr><td>Music</td><td>Музыка</td></tr>
+            <tr><td>School</td><td>Школа</td></tr>
+            <tr><td>Teacher</td><td>Учитель</td></tr>
+            <tr><td>Student</td><td>Студент</td></tr>
+            <tr><td>Table</td><td>Стол</td></tr>
+            <tr><td>Chair</td><td>Стул</td></tr>
+            <tr><td>Window</td><td>Окно</td></tr>
+            <tr><td>Door</td><td>Дверь</td></tr>
+            <tr><td>Street</td><td>Улица</td></tr>
+            <tr><td>City</td><td>Город</td></tr>
+            <tr><td>Country</td><td>Страна</td></tr>
+            <tr><td>Morning</td><td>Утро</td></tr>
+            <tr><td>Evening</td><td>Вечер</td></tr>
+            <tr><td>Night</td><td>Ночь</td></tr>
+            <tr><td>Year</td><td>Год</td></tr>
+            <tr><td>Time</td><td>Время</td></tr>
+            <tr><td>Day</td><td>День</td></tr>
+            <tr><td>Week</td><td>Неделя</td></tr>
+            <tr><td>Month</td><td>Месяц</td></tr>
+            <tr><td>Love</td><td>Любовь</td></tr>
+            <tr><td>Happiness</td><td>Счастье</td></tr>
+            <tr><td>Work</td><td>Работа</td></tr>
+            <tr><td>Money</td><td>Деньги</td></tr>
+            <tr><td>Food</td><td>Еда</td></tr>
+            <tr><td>Fruit</td><td>Фрукты</td></tr>
+            <tr><td>Vegetables</td><td>Овощи</td></tr>
+            <tr><td>Sport</td><td>Спорт</td></tr>
+            <tr><td>Football</td><td>Футбол</td></tr>
+            <tr><td>Basketball</td><td>Баскетбол</td></tr>
+            <tr><td>Doctor</td><td>Доктор</td></tr>
+            <tr><td>Hospital</td><td>Больница</td></tr>
+            <tr><td>Science</td><td>Наука</td></tr>
+            <tr><td>Technology</td><td>Технологии</td></tr>
+            <tr><td>Internet</td><td>Интернет</td></tr>
+            <tr><td>Computer</td><td>Компьютер</td></tr>
+            <tr><td>Phone</td><td>Телефон</td></tr>
+            <tr><td>Beach</td><td>Пляж</td></tr>
+            <tr><td>Mountain</td><td>Гора</td></tr>
+        </table>
+    </div>
+    <div class="container">
+		<p class="header__subtitle">Дальше переходи к практике, где тебе нужно будет вспомнить слова которые были выше, если не помнишь наводись рядом со словом на блок и он повится</p>
+		<br>
+        <div class="footer">
+            <a href="{% url 'index' %}"><button class="btn">Главная</button></a>
+            <a href="{% url 'practice' %}"><button class="btn">Практика</button></a>
+        </div>
+    </div>
+    <a href="#top" class="scroll-to-top">↑</a>
+</body>
+</html>

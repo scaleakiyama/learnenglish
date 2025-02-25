@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #FDF6E3;
+	font-family: "Poppins", serif;
+	font-weight: 400;
+	font-size: 20px;
+	color: #333333;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	text-align: left;
+	margin-bottom: 40px;
+}
+th, td {
+	border: 1px solid black;
+	padding: 8px;
+}
+th {
+	background-color: #f2f2f2;
+}
+
+.container {
+	width: 33.3%;
+	margin: 0 auto;	
+}
+
+.header__title {
+	text-align: start;
+	font-size: 40px;
+	line-height: 120%;
+	padding: 25px 0;
+}
+
+.grammar_book {
+	width: 100%;
+}
+
+.personal-pronouns__title {
+	margin-bottom: 40px;
+}
+
+.personal-pronouns__subtitle {
+	margin-bottom: 40px;
+}
+
+.personal-pronouns__list li {
+	margin-bottom: 20px;
+	font-size: 16px;
+}
+
+.personal-pronouns__list-purple {
+	margin-bottom: 40px;
+	padding-left: 10%;
+}
+
+.personal-pronouns__list-purple li {
+	color: #502c6e;
+	margin-bottom: 5px;
+	font-size: 16px;
+}
+.scroll-to-top {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	width: 50px;
+	height: 50px;
+	background-color: #6200ea;
+	color: white;
+	text-align: center;
+	line-height: 50px;
+	border-radius: 50%;
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: bold;
+	transition: all .3s ease;
+}
+
+.scroll-to-top:hover {
+	background-color: #3700b3;
+}
+
+.footer {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 40px;
+}
+
+.btn {
+	background: #90CAF9;
+	border: 0;
+	padding: 25px 70px;
+	border-radius: 10px;
+	transition: all .3s ease;
+	cursor: pointer;
+}
+
+.btn:hover {
+	background: #E57373;
+	border-radius: 20px;
+}
