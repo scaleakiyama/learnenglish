@@ -6,10 +6,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="{% static 'css/subs.css' %}" />
 		<title>Подписки</title>
+		<style>
+		</style>
 	</head>
 	<body>
 		<h1 style="text-align: center">Выберите подписку</h1>
-		<div class="subscription-container">
+		<div class="subscription-container" style='flex-wrap: wrap;'>
 			{% for subscription in subscriptions %}
 			<div class="subscription-card">
 				<h3>Подписка на {{ subscription.get_duration_display }}</h3>
@@ -17,7 +19,7 @@
 				{% if subscription.discount > 0 %}
 				<p class="discount">Скидка: {{ subscription.discount }}%</p>
 				{% endif %}
-				<button class="subscribe-button">Оформить</button>
+				<button class="subscribe-button"><a href="/" style="color: white; text-decoration: none;">Оформить</a></button>
 			</div>
 			{% endfor %}
 		</div>
